@@ -28,10 +28,10 @@ func (sp *Stack[T]) Pop() (T, error) {
 	return e, nil
 }
 
-func (sp Stack[T]) IsEmpty() bool {
+func (sp *Stack[T]) IsEmpty() bool {
 	return len(sp.elements) == 0
 }
 
-func (sp Stack[T]) GetElements() []T {
+func (sp *Stack[T]) GetElements() []T {
 	return sp.elements
 }
